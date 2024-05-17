@@ -47,17 +47,63 @@ captions, enhancing overall video understanding and accessibility.
 
 ### CNN (Convolutional Neural Network)Purpose: 
 Extract features from images.
-Model Used: Xception (a pre-trained model).LSTM (Long Short-Term Memory)Purpose: Generate descriptions for images using features extracted by the CNN.
-### LLM (Large Language Model)Purpose: 
+Model Used: Xception (a pre-trained model).
+LSTM (Long Short-Term Memory)Purpose: Generate descriptions for images using features extracted by the CNN.
+![image](https://github.com/kirtimandloi/Image-and-Video-Caption-Generator/assets/159609273/9c108e25-06ea-405c-9d3a-7f5b2eb08990)
+
+### LLM (Large Language Model)Purpose:
+![image](https://github.com/kirtimandloi/Image-and-Video-Caption-Generator/assets/159609273/20f511a2-2417-4723-88c6-8b6b0136be1c)
 Enhance video captioning by summarizing frame-level captions into a coherent video caption. 
 Model Used: Facebook's BART.
+
+## Dataset Description (Flickr8k)
+The Flickr8k dataset is a public benchmark dataset designed for image-to-sentence description tasks. It consists of 8,000 images, each paired with five captions. These images are sourced from diverse groups on the Flickr website, providing a broad range of scenarios and events.
+
+### Key Features
+#### Image-Caption Pairs: 
+Each image in the dataset comes with five distinct captions. 
+These captions provide clear and detailed descriptions of the entities and events present in the images.
+#### Diversity: 
+The images depict a wide variety of events and scenarios without including well-known people or places, making the dataset more generic and suitable for broad applications.
+#### Dataset Split:
+  Training Set: 6,000 
+  imagesDevelopment Set: 1,000 
+  imagesTest Set: 1,000 images
+  
+### Advantages of dataset
+#### Multiple Captions per Image:
+Having multiple captions for each image ensures that the model can learn from different perspectives and linguistic expressions.
+This variety helps in making the model more generic and reduces the risk of overfitting.
+#### Diverse Categories:
+The wide range of image categories in the training set helps the model generalize better to different types of images.
+This diversity makes the image captioning model more robust and capable of handling various image categories effectively.
+
+### Suitability for the Project
+The Flickr8k dataset's features make it particularly suitable for developing an image caption generator. The multiple captions per image allow the model to understand and generate varied and accurate descriptions. The diverse categories of images in the dataset ensure that the model can generalize well and provide robust performance across different image types. This makes the dataset an excellent choice for training and evaluating an image captioning model, ensuring high-quality, contextually relevant captions.
+
 ### Workflow
+![image](https://github.com/kirtimandloi/Image-and-Video-Caption-Generator/assets/159609273/eaaee03a-ddd1-4300-a7fa-f45dca754918)
+
 #### Image Captioning: 
 Use the Xception model to extract features from the input image.Pass these features to the LSTM network to generate a descriptive caption.
 #### Video Captioning:
-Generate captions for individual video frames using the CNN-LSTM model.Feed the frame-level captions into the BART model.BART performs text summarization on the frame captions to create a concise summary.The summarized text serves as the final caption for the video.
+Generate captions for individual video frames using the CNN-LSTM model.Feed the frame-level captions into the BART model.
+BART performs text summarization on the frame captions to create a concise summary.The summarized text serves as the final caption for the video.
 
-## Benefits
+## Results preview of Project
+### Image Captioning 
+![image](https://github.com/kirtimandloi/Image-and-Video-Caption-Generator/assets/159609273/3b2e792a-5231-4d09-8dec-2edde2b56a22)
+![image](https://github.com/kirtimandloi/Image-and-Video-Caption-Generator/assets/159609273/01e28aba-692c-4e7f-9b32-b83c004353e4)
+#### Image Captions look like...
+![image](https://github.com/kirtimandloi/Image-and-Video-Caption-Generator/assets/159609273/ce9ad5f0-74ce-4b46-8169-d8d345e4865d)
+
+### Video Captioning
+![image](https://github.com/kirtimandloi/Image-and-Video-Caption-Generator/assets/159609273/ab8c5dd5-198f-4add-a188-780d6ea9b703)
+#### Video captions look like...
+![image](https://github.com/kirtimandloi/Image-and-Video-Caption-Generator/assets/159609273/a6e669e0-eef6-4b21-9899-f1303bf2d0e0)
+
+
+## Benefits of Project
 ### Coherence: 
 By leveraging the LLM, video captions are more coherent, effectively capturing the essence of the video sequence.
 ### Conciseness: 
