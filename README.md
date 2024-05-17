@@ -53,6 +53,7 @@ LSTM (Long Short-Term Memory)Purpose: Generate descriptions for images using fea
 
 ### LLM (Large Language Model)Purpose:
 ![image](https://github.com/kirtimandloi/Image-and-Video-Caption-Generator/assets/159609273/20f511a2-2417-4723-88c6-8b6b0136be1c)
+
 Enhance video captioning by summarizing frame-level captions into a coherent video caption. 
 Model Used: Facebook's BART.
 
@@ -66,8 +67,11 @@ These captions provide clear and detailed descriptions of the entities and event
 #### Diversity: 
 The images depict a wide variety of events and scenarios without including well-known people or places, making the dataset more generic and suitable for broad applications.
 #### Dataset Split:
+
   Training Set: 6,000 
+  
   imagesDevelopment Set: 1,000 
+  
   imagesTest Set: 1,000 images
   
 ### Advantages of dataset
@@ -99,8 +103,6 @@ BART performs text summarization on the frame captions to create a concise summa
 
 ### Video Captioning
 ![image](https://github.com/kirtimandloi/Image-and-Video-Caption-Generator/assets/159609273/ab8c5dd5-198f-4add-a188-780d6ea9b703)
-#### Video captions look like...
-![Video Description](path/to/video.mp4)
 
 ## Benefits of Project
 ### Coherence: 
