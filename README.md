@@ -100,8 +100,7 @@ BART performs text summarization on the frame captions to create a concise summa
 ### Video Captioning
 ![image](https://github.com/kirtimandloi/Image-and-Video-Caption-Generator/assets/159609273/ab8c5dd5-198f-4add-a188-780d6ea9b703)
 #### Video captions look like...
-![image](https://github.com/kirtimandloi/Image-and-Video-Caption-Generator/assets/159609273/a6e669e0-eef6-4b21-9899-f1303bf2d0e0)
-
+![Video Description](path/to/video.mp4)
 
 ## Benefits of Project
 ### Coherence: 
