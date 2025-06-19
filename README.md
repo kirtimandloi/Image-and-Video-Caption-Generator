@@ -31,7 +31,7 @@ The main aim of this project is to get a little bit of knowledge of deep learnin
 use two techniques mainly CNN and LSTM for image classification. So, to make our image 
 caption generator model, we will be merging these architectures. It is also called a CNN-RNN 
 model. 
-• CNN is used for extracting features from the image. We will use the pre-trained model Xception.
+• CNN is used for extracting features from the image. We will use the pre-trained model VGG16.
 • LSTM will use the information from CNN to help generate a description of the image. 
 Also for video captioning  involves integrating a Large Language Model (LLM), such as 
 Facebook's   BART, into the image captioning pipeline to enhance video captioning capabilities. 
@@ -47,7 +47,7 @@ captions, enhancing overall video understanding and accessibility.
 
 ### CNN (Convolutional Neural Network)Purpose: 
 Extract features from images.
-Model Used: Xception (a pre-trained model).
+Model Used: VGG16 (a pre-trained model).
 LSTM (Long Short-Term Memory)Purpose: Generate descriptions for images using features extracted by the CNN.
 ![image](https://github.com/kirtimandloi/Image-and-Video-Caption-Generator/assets/159609273/9c108e25-06ea-405c-9d3a-7f5b2eb08990)
 
@@ -89,7 +89,7 @@ The Flickr8k dataset's features make it particularly suitable for developing an 
 ![image](https://github.com/kirtimandloi/Image-and-Video-Caption-Generator/assets/159609273/eaaee03a-ddd1-4300-a7fa-f45dca754918)
 
 #### Image Captioning: 
-Use the Xception model to extract features from the input image.Pass these features to the LSTM network to generate a descriptive caption.
+Use the VGG16 model to extract features from the input image.Pass these features to the LSTM network to generate a descriptive caption.
 #### Video Captioning:
 Generate captions for individual video frames using the CNN-LSTM model.Feed the frame-level captions into the BART model.
 BART performs text summarization on the frame captions to create a concise summary.The summarized text serves as the final caption for the video.
