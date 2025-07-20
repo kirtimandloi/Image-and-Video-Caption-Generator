@@ -1,6 +1,8 @@
 # Image-and-Video-Caption-Generator
 Creating accurate and meaningful captions for images and videos is a difficult task because it requires a deep understanding of what is shown. This difficulty is increased by the specific challenges of using recurrent neural networks (RNNs) and dealing with the time-related aspects of videos.This guide explores the limitations of traditional RNNs, the vanishing gradient problem, and the challenges associated with CNN-LSTM models in video captioning, providing insights into potential solutions.
 
+"C:\Users\LENOVO\Downloads\image captioning [039E226].mp4"
+
 ## Overview
 The main aim of this project is to gain knowledge of deep learning techniques by implementing an image and video caption generator. We primarily use Convolutional Neural Networks (CNNs) and Long Short-Term Memory (LSTM) networks for this purpose. 
 The project involves merging these architectures to create a CNN-RNN model for image captioning and further integrating a Large Language Model (LLM) for enhanced video captioning.
